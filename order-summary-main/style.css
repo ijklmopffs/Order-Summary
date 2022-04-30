@@ -1,0 +1,15 @@
+.order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.annual_plan h1 {
+  display: inline-block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(./public/pattern-background-desktop.svg);
+}
