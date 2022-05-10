@@ -1,129 +1,84 @@
-html,
-body {
-  font-family: RedHat;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/pattern-background-desktop.svg);
-  background-size: 100%;
-  background-color: hsl(225, 100%, 94%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background-image: url(../public/pattern-background-desktop.svg);
+  background-size: cover;
   background-repeat: no-repeat;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.card {
+  position: absolute;
+  top: 15vh;
+  left: 600px;
+  margin: 0 auto;
+
+  width: 28%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
 }
 
-@font-face {
-  font-family: "RedHat";
-  src: url(/RedHatDisplay-Regular.ttf);
+.card img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
-#base{
-    background-color: white;
-    max-width: 435px;
-    min-height: 35vw;
-    border-radius: 25px;
-    text-align: center;
-}
-
-@media (max-width:600px){
-  #base{
-    max-width: 375px;
-    min-height: 30vw;
-  }
-}
-
-#image{
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  max-width: 100%;
-  height: auto;
-}
-
-#text{
-  padding: 25px 50px 25px 50px;
-}
-
-#title{
-  font-weight: 700;
-  font-size: 24px;
-  color: hsl(223, 47%, 23%);
-}
-
-.paleblue{
-  color: hsl(224, 23%, 55%);
-}
-
-#price{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: hsl(225, 100%, 96%);
-  border-radius: 10px;
-}
-
-#music{
-  margin: auto;
-  width: 50px;
-  height: 50px;
-}
-
-#undertitle{
-  color: hsl(223, 47%, 23%);
-  font-weight: 700;
-  margin: auto;
-}
-
-#cost{
-  margin: auto;
-  font-weight: 400;
-}
-
-a{
-  text-decoration: none;
-}
-
-a:hover{
+.card_info {
+  padding: 50px;
   cursor: pointer;
 }
 
-#change{
-  color:hsl(245, 75%, 52%);
-  font-weight: 500;
-  line-height: 65px;
-  padding-left: 50px;
-  text-decoration: underline;
+.card_info h2 {
+  font-weight: bolder;
+}
+.card_info p {
+  color: grey;
+  padding: 20px;
 }
 
-#change:hover{
-  color:hsl(245, 75%, 65%);
+.card_info .card_text {
+  padding-top: 20px;
 }
-
-
-#proceed{
-  box-shadow: 0px 10px 20px rgb(200,200,200);
-  margin: 20px 0px 20px 0px;
-  color: white;
-  min-height: 45px;
-  line-height: 45px;
-  background-color: hsl(245, 75%, 52%);
-  font-weight: 700;
+.card_annual_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #f1f3fa;
+  padding: 10px;
   border-radius: 10px;
 }
 
-#proceed:hover{
-  background-color: hsl(245, 75%, 62%);
-  color: hsl(0,100%,95%);
+.card_annual_btn img {
+  width: 10%;
+  height: 10%;
+  padding-top: 5px;
 }
-
-
-#cancel{
-  margin: 20px 0px 20px 0px;
-  min-height: 45px;
-  line-height: 45px;
-  font-weight: 700;
+.card_annual_btn .annual_plan p {
+  padding: 0;
+  padding-top: 5px;
 }
-
-#cancel:hover{
-  color: hsl(224, 23%, 30%);
+.card_annual_btn a {
+  padding-top: 10px;
+}
+.card_info .payment {
+  background-color: blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 10px;
+}
+.payment a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }

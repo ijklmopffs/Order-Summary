@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Summary</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <!-- PLEASE SEE SCREENSHOT.PNG FOR WHAT I'M TRYING TO BUILD. CURRENTLY THIS IS HOW FAR I'VE COME, SO I NEED HELP WITH COMPLETING IT.  -->
   <body>
     <div class="container">
-      <div class="order">
-        <div class="content">
-          <img src="./public/illustration-hero.svg" alt="Dancing man" />
-          <h1><strong>Order Summary</strong></h1>
-          <h4>
-            You can now listem to millions of songs ,audiobooks, and podcast on
-            any device you like, anywhere.
-          </h4>
-          <div class="annual_plan">
-            <img src="./public/icon-music.svg" alt="music icon" />
-            <h1><strong>Annual Plan</strong></h1>
-            <h5>$59.99/year</h5>
-            <a href="Change">Change</a>
-            <div class="Payment_button">
-              <button>Proceed to Payment</button>
+      <div class="card">
+        <div class="card_img">
+          <img src="/public/illustration-hero.svg" alt="" />
+        </div>
+        <div class="card_info">
+          <h2>Order Summary</h2>
+          <div class="card_text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like !
+          </div>
+          <div class="card_annual_btn">
+            <img src="./public/icon-music.svg" alt="" />
+            <div class="annual_plan">
+              <p>
+                Annual plan
+                <br />
+                $59.99
+              </p>
             </div>
-            <h2>Cancel Order</h2>
+            <a href="">Change</a>
+          </div>
+          <div class="payment">
+            <a href="">Proceed to Payment</a>
+          </div>
+
+          <div class="cancel">
+            <p>Cancel Order</p>
           </div>
         </div>
       </div>
